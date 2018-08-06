@@ -1,0 +1,93 @@
+/** Navbar
+|=================================================================
+| => Genaral
+|-----------------------------------------------------------------
+| => Logo
+|-----------------------------------------------------------------
+| => User
+*/
+
+// => GENERAL
+//==========================================================
+.navbar-default .navbar-nav > li > a {
+  color: $cc_navbar-text-color;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  cursor: pointer;
+  color: $cc_secondary-color;
+  background-color: $cc_primary-hover-color;
+}
+
+// toggle SideBar
+.app_toggle-sidebar{
+  margin: 0 0 0 -15px !important;
+
+  & a{
+    width: 60px;
+    text-align: center;
+  }
+}
+
+// => LOGO
+//==========================================================
+.app_logo-sm{ // small
+  display: none;
+}
+
+.app_logo-lg{ // large
+  display: block;
+}
+
+// => USER
+//==========================================================
+.app_navbar-user{
+  padding: 7.5px !important;
+  line-height: normal !important;
+
+  >img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+  }
+}
+
+.navbar-default .navbar-nav > .open > a{
+  background-color: $cc_primary-hover-color !important;
+  color: $cc_secondary-color !important;
+}
+
+.app_user-options{
+  margin-top: 10px !important;
+  background-color: $cc_primary-hover-color !important;
+
+  > li{
+    cursor: pointer;
+    font-size: 18px;
+
+    >a{
+
+    }
+
+    > a > i{
+      margin-right: 7px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 2px;
+      background-color: $cc_secondary-color;
+      color: $cc_primary-hover-color;
+    }
+
+    > a > span{
+
+    }
+  }
+
+  > li:hover{
+    background-color: $cc_primary-color !important;
+  }
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="270"
+   height="50"
+   viewBox="0 0 270 50"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="logo_lg.svg"
+   inkscape:export-filename="C:\www\passwordbag\public\img\logo_lg.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.4723658"
+     inkscape:cx="112.83215"
+     inkscape:cy="19.970566"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     units="px"
+     showguides="false" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1002.3622)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:100;font-stretch:normal;font-size:36.44543457px;line-height:125%;font-family:'AR DELANEY';-inkscape-font-specification:'AR DELANEY Thin';letter-spacing:0px;word-spacing:0px;fill:#468080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="45.470909"
+       y="1040.5457"
+       id="text4167"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4169"
+         x="45.470909"
+         y="1040.5457">PasswordBag</tspan></text>
+    <rect
+       style="opacity:1;fill:#468080;fill-opacity:1;stroke:none"
+       id="rect4139"
+       width="40"
+       height="40"
+       x="5"
+       y="1007.3622"
+       ry="2.1300223"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="opacity:1;fill:#ffe680;fill-opacity:1;stroke:none"
+       d="m 10.824202,1010.1469 c -1.1993457,3.3646 -1.8279375,7.1065 -1.8321599,10.906 2.8e-6,13.0116 7.1670109,23.5594 16.0079589,23.5594 8.84095,0 16.007955,-10.5478 16.00796,-23.5594 -0.0068,-3.7982 -0.637549,-7.5377 -1.838414,-10.8999 -4.960897,4.9438 -10.766266,4.0681 -14.169546,0.6955 -3.404853,3.3742 -9.213802,4.2472 -14.175799,-0.7016 z"
+       id="path4139"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccscccc" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:#ffeac0;fill-opacity:1;stroke:none"
+       d="m 30.881837,1023.9581 c -0.136096,-0.015 -0.277372,0.023 -0.392577,0.116 l -11.492188,9.2753 c -0.230415,0.1861 -0.265815,0.5213 -0.07911,0.7511 l 8.345704,10.2725 c 4.834336,-1.0078 8.974718,-5.1889 11.412109,-11.0704 l -7.433593,-9.1494 c -0.09335,-0.1144 -0.224259,-0.1811 -0.360352,-0.1953 z"
+       id="rect4162" />
+    <rect
+       style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:none"
+       id="rect4151"
+       width="12.499999"
+       height="10.5"
+       x="18.750004"
+       y="1023.759"
+       ry="0.4959957" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:#ff8080;fill-opacity:1;stroke:none"
+       d="m 25.000001,1018.5635 a 4.5000001,5.6877646 0 0 0 -4.500001,5.6874 4.5000001,5.6877646 0 0 0 1.134767,3.7668 3.996021,5.6877646 0 0 1 -0.63086,-3.0664 3.996021,5.6877646 0 0 1 3.996094,-5.6875 3.996021,5.6877646 0 0 1 3.996094,5.6875 3.996021,5.6877646 0 0 1 -0.643555,3.085 4.5000001,5.6877646 0 0 0 1.147461,-3.7854 4.5000001,5.6877646 0 0 0 -4.5,-5.6874 z"
+       id="path4153" />
+    <circle
+       style="opacity:1;fill:#f9f9f9;fill-opacity:1;stroke:none"
+       id="path4158"
+       cx="24.999998"
+       cy="1027.629"
+       r="1.7500001" />
+    <rect
+       style="opacity:1;fill:#f9f9f9;fill-opacity:1;stroke:none"
+       id="rect4160"
+       width="2.1599107"
+       height="3.5998514"
+       x="23.920042"
+       y="1028.5071"
+       ry="0.49599552" />
+  </g>
+</svg>

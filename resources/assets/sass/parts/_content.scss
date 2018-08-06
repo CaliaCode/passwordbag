@@ -1,0 +1,357 @@
+/** Main Content
+|=================================================================
+| => General
+|-----------------------------------------------------------------
+| => Table row Actions
+|-----------------------------------------------------------------
+| => Modal
+|-----------------------------------------------------------------
+| => Info Messages
+|-----------------------------------------------------------------
+| => Categories
+|-----------------------------------------------------------------
+| => Settings
+*/
+
+// => GENERAL
+//==========================================================
+
+.app_main{
+  position: relative;
+  margin-left: 220px;
+  padding-bottom: 50px;
+
+  .panel{
+    float: left;
+    width: 100%;
+  }
+}
+
+// => TABLE ROW ACTIONS
+//==========================================================
+.app_content-actions{
+  margin-bottom: 10px;
+
+  > a > i{
+    margin-right: 8px;
+  }
+}
+
+// => MODAL
+//==========================================================
+.modal{
+
+  .modal-content{
+    border-radius: 0 !important;
+  }
+
+  .app_form-loading{
+    display: none;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+  }
+
+  .modal-header{
+    text-align: center;
+    border-bottom: none;
+    padding-bottom: 0;
+
+    span{
+      background-position: center center;
+      background-size: cover;
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      border-radius: 50%;
+      box-shadow: 1px 1px 5px -2px #e6e6e6;
+    }
+  }
+
+  .list-group{
+
+    .list-group-item{
+      border: 1px solid rgba(221, 221, 221, 0.43);
+    }
+
+    .list-group-item:nth-child(odd){
+      background-color: #f8f8f8;
+    }
+  }
+}
+
+@keyframes formSubmit {
+  from {opacity: 0.8;}
+  to {opacity: 0.1;}
+}
+
+.modal-dialog.app_form-working{
+
+  .app_form-loading{
+    display: block;
+  }
+
+  .modal-header,
+  .modal-body,
+  .modal-footer{
+    opacity: 0.1;
+    animation-name: formSubmit;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+}
+
+// => INFO MESSAGES
+//==========================================================
+#noty_topCenter_layout_container > li{
+
+  border: none !important;
+
+  .noty_bar{
+    border-radius: 2px;
+    border: 0;
+    box-shadow: none;
+    color: white;
+
+    &.noty_type_success{
+      background-color: rgb(76, 224, 76);
+    }
+
+    &.noty_type_error{
+      background-color: rgb(186, 66, 35);
+    }
+
+    &.noty_type_dialog{
+
+    }
+
+    .noty_message{
+
+    }
+
+    .noty_buttons{
+
+    }
+  }
+}
+
+// => CATEGORIES
+//==========================================================
+
+.app_categories_working{
+  text-align: center;
+  color: $cc_secondary-color;
+  margin-bottom: 10px;
+}
+
+.app_categories_submit{
+  text-align: center;
+  margin-top: 15px;
+
+  button.btn-primary{
+    font-size: 24px;
+    border: none;
+    color: $cc_primary-color;
+    background-color: $cc_secondary-color;
+
+    &:hover{
+      color: $cc_secondary-color;
+      background-color: $cc_primary-color;
+    }
+  }
+
+  i{
+    margin-right: 8px;
+  }
+}
+
+#app_categories{
+  text-align: center;
+
+  .category{
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+}
+
+// => "New Account Group" button
+.app_new-category{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: coral;
+  color: white;
+  font-size: 24px;
+  border: none;
+}
+
+.category:nth-child(odd){
+  background-color: $cc_primary-color;
+}
+
+.category:nth-child(even){
+  background-color: $cc_secondary-color;
+}
+
+// Drang & Drop
+.category-ghost{
+  border: 2px dashed #d3d3d3;
+}
+
+.category-chosen{
+  border: 2px dashed #d3d3d3;
+}
+
+.category-drag{
+  background-color: #2f1e2e;
+}
+
+// => SETTINGS
+//==========================================================
+
+#app_settings-form{
+
+  // General
+  .app_settings_working{
+    text-align: center;
+    color: $cc_secondary-color;
+  }
+
+  .app_settings_submit{
+    text-align: center;
+    margin-top: 15px;
+
+    button.btn-primary{
+      font-size: 24px;
+      border: none;
+      color: $cc_primary-color;
+      background-color: $cc_secondary-color;
+
+      &:hover{
+        color: $cc_secondary-color;
+        background-color: $cc_primary-color;
+      }
+    }
+
+    i{
+      margin-right: 8px;
+    }
+  }
+
+  h3{
+    display: inline-block;
+    padding: 8px 0;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #4f2c26;
+    border-bottom: 1px solid #4f2c26;
+  }
+
+  // App logo
+  .app_logo{
+
+    input[type=file]{
+      display: none;
+    }
+
+    label{
+      width: 50px;
+      height: 50px;
+      margin: 0;
+      float: left;
+      padding: 0;
+      line-height: 50px;
+      text-align: center;
+      border: 3px dashed $cc_secondary-color;
+      font-size: 18px;
+
+      &:hover{
+        cursor: pointer;
+      }
+
+      i{
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+        background-color: transparent;
+        line-height: 50px;
+        color: $cc_secondary-color;
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+
+    span{
+      height: 50px;
+      width: 300px;
+      margin-left: 15px;
+      float: left;
+      display: block;
+      background-size: contain;
+      background-position: center left;
+      background-repeat: no-repeat;
+    }
+  }
+
+  // Theme Color
+  .app_theme-color{
+    input[type=radio]{
+      display: none;
+
+      & + label{
+        position: relative;
+
+        img{
+          width: 100%;
+        }
+      }
+
+      & + label:hover{
+        cursor: pointer;
+      }
+
+      &:checked{
+
+        & + label{
+          img{
+            opacity: 0.3;
+          }
+        }
+
+        & + label:before{
+          content: "\2714";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-top: -15px;
+          margin-left: -15px;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 24px;
+          text-align: center;
+          z-index: 100;
+          background-color: #32414f;
+          color: #ffe96f;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

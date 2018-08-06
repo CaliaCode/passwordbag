@@ -1,0 +1,356 @@
+/** Responsive
+|=================================================================
+| => Extra Small
+|-----------------------------------------------------------------
+| => Small
+|-----------------------------------------------------------------
+| => Medium
+|-----------------------------------------------------------------
+| => Large
+*/
+
+// => IPHONE RETINA
+//==========================================================
+@media only screen and (min-width : 320px) {
+  // Navbar
+  .navbar-header{
+    float: left !important;
+
+    span.app_logo-sm{
+      display: block;
+    }
+
+    span.app_logo-lg{
+      display: none;
+    }
+  }
+
+  .navbar-left{
+    float: left !important;
+  }
+
+  .navbar-right{
+    float: right !important;
+  }
+
+  .nav > li{
+    float: left;
+
+    & > a{
+      height: 60px;
+      line-height: 60px;
+      padding: 0 15px;
+    }
+  }
+
+  .navbar-nav.navbar-left{
+    margin: 0 15px
+  }
+
+  .navbar-nav.navbar-right{
+    margin: 0 -15px
+  }
+
+  // Side Menu
+  aside{
+    position: fixed;
+    top: 0;
+    left: -220px;
+    z-index: 9999;
+    width: 220px !important;
+    height: 100%;
+    display: block;
+    transition: left .5s linear;
+
+    .app_toggle-sidebar-menu{
+      display: none;
+      cursor: pointer;
+    }
+  }
+
+  // Main Content
+  .app_main {
+    margin-left: 0;
+  }
+
+  // Footer
+  .app_footer {
+    margin-left: 0;
+  }
+
+  .app_toggle{
+    aside{
+      left: 0;
+      display: block;
+
+      .app_toggle-sidebar-menu{
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        left: 220px;
+        line-height: 40px;
+        text-align: center;
+        background-color: $cc_secondary-color;
+        color: $cc_primary-color;
+        z-index: 1000;
+      }
+
+      .app_sidebar-menu-title{
+        display: block;
+      }
+
+      .app_sidebar-menu-item > a{ // menu item
+        padding: 8px 15px;
+        display: block;
+
+        > i:first-child{ // menu item icon
+          width: 35px;
+          height: 35px;
+          text-align: center;
+          line-height: 35px;
+          border-radius: 50%;
+          background-color: $cc_primary-color;
+          margin-right: 10px;
+          color: $cc_secondary-color;
+        }
+
+        > span{ // menu item text
+          font-size: 20px;
+          font-weight: 500;
+          color: $cc_primary-color;
+        }
+      }
+    }
+  }
+
+  //
+  .navbar-nav .open .dropdown-menu{
+    position: absolute;
+    right: 0;
+    left: auto;
+    background-color: coral;
+  }
+
+}
+
+// => EXTRA SMALL
+//==========================================================
+@media only screen and (min-width : 480px) {
+
+}
+
+// => SMALL
+//==========================================================
+@media only screen and (min-width : 768px) {
+
+}
+
+// => MEDIUM
+//==========================================================
+@media only screen and (min-width : 992px) {
+  // Navbar Brand
+  .navbar-brand {
+    width: 60px;
+
+    span.app_logo-sm{
+      display: none;
+    }
+
+    span.app_logo-lg{
+      display: block;
+    }
+  }
+
+  // Side Menu
+  aside{
+    position: static;
+    width: 60px !important;
+    transition: width .3s linear;
+
+    .app_toggle-sidebar-menu{
+      display: none;
+    }
+
+    .app_sidebar-menu {
+      .app_sidebar-menu-title {
+        display: none;
+      }
+
+      .app_sidebar-menu-item > a { // menu item
+        padding: 0;
+        display: block;
+
+        line-height: 60px;
+        text-align: center;
+
+        > i:first-child { // menu item icon
+          margin-right: 0;
+        }
+
+        > span { // menu item text
+          display: none
+        }
+      }
+    }
+  }
+
+  // Main Content
+  .app_main {
+    margin-left: 60px;
+    transition: margin-left .3s linear;
+  }
+
+  // Footer
+  .app_footer {
+    margin-left: 60px;
+    transition: margin-left .3s linear;
+  }
+
+  .app_toggle{
+    // Side Menu
+    aside{
+      position: static;
+      width: 220px !important;
+
+      .app_toggle-sidebar-menu{
+        display: none;
+      }
+
+      .app_sidebar-menu {
+        .app_sidebar-menu-title {
+          display: block;
+        }
+
+        .app_sidebar-menu-item > a { // menu item
+          padding: 8px 15px;
+          display: block;
+
+          line-height: normal;
+          text-align: left;
+
+          > i:first-child { // menu item icon
+            margin-right: 10px;
+          }
+
+          > span { // menu item text
+            display: inline
+          }
+        }
+      }
+    }
+
+    // Main Content
+    .app_main {
+      margin-left: 220px;
+    }
+
+    // Footer
+    .app_footer {
+      margin-left: 220px;
+    }
+  }
+}
+
+// => LARGE
+//==========================================================
+@media only screen and (min-width : 1200px) {
+  // Side Menu
+  aside{
+    position: static;
+    width: 220px !important;
+    .app_sidebar-menu {
+      .app_sidebar-menu-title {
+        display: block;
+      }
+
+      .app_sidebar-menu-item > a { // menu item
+        padding: 8px 15px;
+        display: block;
+
+        line-height: normal;
+        text-align: left;
+
+        > i:first-child { // menu item icon
+          margin-right: 10px;
+        }
+
+        > span { // menu item text
+          display: inline
+        }
+      }
+    }
+  }
+
+  // Main Content
+  .app_main {
+    margin-left: 220px;
+  }
+
+  // Footer
+  .app_footer {
+    margin-left: 220px;
+  }
+
+  .app_toggle{
+    // Navbar Brand
+    .navbar-brand {
+      width: 60px;
+
+      span.app_logo-sm{
+        display: none;
+      }
+
+      span.app_logo-lg{
+        display: block;
+      }
+    }
+
+    // Side Menu
+    aside{
+      position: static;
+      width: 60px !important;
+      .app_sidebar-menu {
+        .app_sidebar-menu-title {
+          display: none;
+        }
+
+        .app_sidebar-menu-item > a { // menu item
+          padding: 0;
+          display: block;
+
+          line-height: 60px;
+          text-align: center;
+
+          > i:first-child { // menu item icon
+            margin-right: 0;
+          }
+
+          > span { // menu item text
+            display: none
+          }
+        }
+      }
+    }
+
+    // Main Content
+    .app_main {
+      margin-left: 60px;
+    }
+
+    // Footer
+    .app_footer {
+      margin-left: 60px;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .navbar-nav .open .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+    background-color: coral;
+  }
+}

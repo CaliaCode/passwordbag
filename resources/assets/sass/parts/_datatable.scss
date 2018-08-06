@@ -1,0 +1,89 @@
+/** DataTables
+|=================================================================
+| => Search Box
+|-----------------------------------------------------------------
+| => Table Structure
+|-----------------------------------------------------------------
+| => Table Panel
+*/
+
+// => SEARCH BOX
+//==========================================================
+.app_content-heading-search {
+  text-align: right;
+
+  > div {
+    float: right;
+    position: relative;
+
+    > i {
+      position: absolute;
+      line-height: 28px;
+      left: 8px;
+      color: #dcdcdc;
+    }
+
+    > #app_content-table-search {
+      width: 200px;
+      height: 28px;
+      padding-left: 25px;
+      color: $cc_secondary-color;
+      border: 1px solid #dcdcdc;
+      -webkit-transition: width .5s linear;
+      transition: width .5s linear;
+    }
+
+    > #app_content-table-search:hover,
+    > #app_content-table-search:focus {
+      width: 300px;
+      outline: none;
+    }
+  }
+}
+
+// => STRUCTURE
+//==========================================================
+table.dataTable {
+  width: 100%  !important;
+  box-shadow: 3px 5px 13px -6px rgba(190, 190, 190, 0.77),
+              0 0 13px -6px rgba(190, 190, 190, 0.43);
+  width: 100%;
+}
+
+.table-bordered {
+  border: none;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid #f0f0f0;
+}
+
+.app_datatable-actions { // row actions
+  text-align: center;
+
+  > a {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    margin-right: 5px;
+  }
+
+  > a:last-child {
+    margin-right: 0;
+  }
+}
+
+// => TABLE PANEL
+//==========================================================
+.app_content-datatable {
+  .panel-title {
+    line-height: 28px;
+  }
+}

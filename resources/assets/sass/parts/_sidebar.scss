@@ -1,0 +1,86 @@
+/** Forms
+|=================================================================
+| => General
+|-----------------------------------------------------------------
+| => Menu
+*/
+
+// => GENERAL
+//==========================================================
+.app_sidebar{
+  float: left;
+  width: 220px;
+  background-color: $cc_secondary-color;
+  color: $cc_primary-color;
+}
+
+.app_sidebar:after{
+  clear: both;
+}
+
+.app_sidebar:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  width: inherit;
+  background-color: inherit;
+  border: inherit;
+}
+
+// => MENU
+//==========================================================
+.app_sidebar-menu{
+  padding: 0;
+
+  .app_sidebar-menu-title{ // menu title
+
+    > span{
+      text-align: center;
+      margin: 8px 15px;
+      padding: 8px 0;
+      display: block;
+      color: $cc_sidemenu-title-color;
+      border-bottom: 2px solid $cc_primary-color;
+    }
+
+  }
+
+  .app_sidebar-menu-item > a{ // menu item
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+
+    > i:first-child{ // menu item icon
+      width: 35px;
+      height: 35px;
+      text-align: center;
+      line-height: 35px;
+      border-radius: 50%;
+      background-color: $cc_primary-color;
+      margin-right: 10px;
+      color: $cc_secondary-color;
+    }
+
+    > span{ // menu item text
+      font-size: 20px;
+      font-weight: 500;
+      color: $cc_primary-color;
+    }
+
+    > i:last-child{ // menu item submenu arrow
+      float: right;
+      line-height: 35px;
+      font-size: 24px;
+      margin-right: 5px;
+      color: $cc_primary-color;
+    }
+
+  }
+
+  .app_sidebar-menu-item > a:hover { // menu item :hover
+    background-color: $cc_secondary-hover-color;
+    cursor: pointer;
+  }
+}

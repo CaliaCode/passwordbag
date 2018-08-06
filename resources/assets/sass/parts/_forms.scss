@@ -1,0 +1,230 @@
+/** Forms
+|=================================================================
+| => General
+|-----------------------------------------------------------------
+| => Errors
+*/
+
+// => GENERAL
+//==========================================================
+input{
+  outline: none !important;
+}
+
+.form-group{  // General Input
+  position: relative;
+
+  .form-control {
+    display: block;
+    width: 100%;
+    height: 54px;
+    padding: 15px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #f3f3f3;
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  }
+
+  textarea.form-control {
+    height: 150px;
+  }
+
+
+}
+
+.form-group > input[type=file]{ // Input field
+
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+  & ~ label{
+    border: 4px dashed #e6e6e6;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+
+    > i{
+      display: block;
+      width: 55px;
+      height: 55px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: #e6e6e6;
+      line-height: 55px;
+      color: #f9f9f9;
+      text-align: center;
+      font-size: 32px;
+    }
+
+    > span{
+      line-height: 40px;
+      font-size: 22px;
+      color: #e6e6e6;
+      max-width: 100%;
+      overflow: hidden;
+      display: inline-block;
+    }
+  }
+
+  &:focus ~ label{
+    border-color: #e6e6e6;
+
+    i{
+      background-color: #e6e6e6;
+    }
+
+    span{
+      color: #e6e6e6;
+    }
+  }
+
+  & ~ label:hover{
+    cursor: pointer;
+    border-color: $cc_secondary-color;
+
+    i{
+      background-color: $cc_secondary-color;
+    }
+
+    span{
+      color: $cc_secondary-color;
+    }
+  }
+}
+
+// Correct bug
+.has-success .form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+// => Select field
+.select2-container {
+  width: 100% !important;
+  height: 54px;
+
+  .select2-selection--single {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+
+    .select2-selection__rendered {
+      display: block;
+      width: 100%;
+      height: 54px;
+      padding: 15px 12px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #000000;
+      background-color: #f3f3f3;
+    }
+
+    .select2-selection__arrow {
+      height: 54px;
+    }
+  }
+}
+
+#app_form-user-update,
+#app_form-user-create {
+  // Filters Select2 Boxes
+  .select2-container {
+    height: auto !important;
+  }
+
+  // => Select field multiple
+  .select2-container .select2-selection--multiple {
+    border: none;
+
+    &:focus {
+      border: none;
+    }
+
+    .select2-selection__rendered {
+      display: block;
+      width: 100%;
+      min-height: 54px;
+      padding: 15px 12px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #000000;
+      background-color: #f3f3f3;
+      border: none;
+      border-radius: 0;
+    }
+  }
+
+  .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #377da7;
+    border: 0;
+    border-radius: 4px;
+    cursor: default;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 6.5px 5px 6.5px 28px;
+    font-size: 14px;
+    position: relative;
+    color: white;
+  }
+
+  .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 2px;
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 6px;
+    background-color: #999999;
+  }
+}
+
+// => ERRORS
+//==========================================================
+.form-group.has-error{
+
+  .form-control{
+    border:1px solid #9d4747;
+  }
+
+  .help-block {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .error-help-block{
+    position: relative;
+    background: #9d4747;
+    padding: 6px 12px;
+
+    &:before{
+      position: absolute;
+      top: -12px;
+      left: 0;
+      content: '';
+      width: 12px;
+      height: 12px;
+      border-top: 6px solid transparent;
+      border-left: 6px solid #9d4747;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid #9d4747;
+    }
+  }
+}
+
